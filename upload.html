@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Yükle</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Film Yükle</h1>
+    </header>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="movie-title">Film Adı:</label>
+        <input type="text" id="movie-title" name="movie-title" required><br>
+        
+        <label for="movie-poster">Poster Seç:</label>
+        <input type="file" id="movie-poster" name="movie-poster" required><br>
+        
+        <label for="movie-description">Açıklama:</label>
+        <textarea id="movie-description" name="movie-description" required></textarea><br>
+
+        <label for="movie-actors">Oyuncular:</label>
+        <input type="text" id="movie-actors" name="movie-actors" required><br>
+        
+        <label for="movie-trailer">Fragman Linki:</label>
+        <input type="url" id="movie-trailer" name="movie-trailer"><br>
+        
+        <button type="submit">Yükle</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
